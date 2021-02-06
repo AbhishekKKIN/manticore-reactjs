@@ -1,0 +1,12 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+
+.learnmore {
+  background: linear-gradient(60deg, #e12, #f52);
+  border: none;
+}
+
+.color-orange {
+  color: orangered;
+  border-color: orangered !important;
+}
