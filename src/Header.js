@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -38,15 +39,23 @@ function Header() {
         </div>
         <Navbar bg="light" expand="lg" sticky="top">
           <Container>
-            <Navbar.Brand href="#home">
-              <img src={brandLogo} alt="ManticoreSoft" height="90"/>
+            <Navbar.Brand>
+              <Link className="px-4 text-dark font-weight-bold" to="/"> 
+                <img src={brandLogo} alt="ManticoreSoft" height="90"/>
+              </Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse className="justify-content-end">
               <Nav className="ml-auto">
-                <Nav.Link href="#home" className="px-4 text-dark font-weight-bold">Home</Nav.Link>
-                <Nav.Link href="#features" className="px-4 text-dark font-weight-bold">Services</Nav.Link>
-                <Nav.Link href="#pricing" className="px-4 text-dark font-weight-bold">Portfolio</Nav.Link>
+                <Link className="px-4 text-dark font-weight-bold" to="/home"> 
+                  Home 
+                </Link>
+                <Link className="px-4 text-dark font-weight-bold" to="/services">
+                  Services
+                </Link>
+                <Link className="px-4 text-dark font-weight-bold" to="/portfolio">
+                  Portfolio
+                </Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
