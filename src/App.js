@@ -16,14 +16,9 @@ class App extends Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/services" exact component={Services} />
+              <Route component={Home} />
             </Switch>
           </Router>
-          <Switch>
-            <Route exact path= "/" render={() => (
-              <Redirect to="/home"/>
-            )}/>
-            <Route exact path='/home' component={Home} />
-          </Switch>
         </Router>
         
       </div>

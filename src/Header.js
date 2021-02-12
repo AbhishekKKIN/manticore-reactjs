@@ -47,7 +47,7 @@ function Header() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse className="justify-content-end">
               <Nav className="ml-auto">
-                <Link className="px-4 text-dark font-weight-bold" to="/home"> 
+                <Link className="px-4 text-dark font-weight-bold" to="/"> 
                   Home 
                 </Link>
                 <Link className="px-4 text-dark font-weight-bold" to="/services">
